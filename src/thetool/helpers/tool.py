@@ -5,6 +5,7 @@ import os
 import tempfile
 import shutil
 import zipfile
+import tarfile
 
 from packaging.version import parse as VersionParser
 from thetool.helpers.http import get_http_session
@@ -129,8 +130,17 @@ def download_tool(tool_metadata, force=False, version=None):
         with zipfile.ZipFile(temp_file.name, 'r') as zip_file:
           zip_file.extractall(temp_dir)
 
-        LOGGER.debug('Moving %s to %s', tool_metadata.get('download_zip_bin'), tool_path)
-        shutil.move(os.path.join(temp_dir, tool_metadata.get('download_zip_bin')), tool_path)
+        LOGGER.debug('Moving %s to %s', tool_metadata.get('download_archive_bin'), tool_path)
+        shutil.move(os.path.join(temp_dir, tool_metadata.get('download_archive_bin')), tool_path)
+
+    case 'tar.gz':
+      with tempfile.TemporaryDirectory() as temp_dir:
+        LOGGER.debug('Extracting %s', temp_file.name)
+        with tarfile.open(temp_file.name, 'r:gz') as tar_file:
+          tar_file.extractall(temp_dir)
+
+        LOGGER.debug('Moving %s to %s', tool_metadata.get('download_archive_bin'), tool_path)
+        shutil.move(os.path.join(temp_dir, tool_metadata.get('download_archive_bin')), tool_path)
 
   LOGGER.debug('Setting permissions on %s', tool_path)
   os.chmod(tool_path, 0o700)
