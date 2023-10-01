@@ -51,6 +51,7 @@ setup(
       'pytest-helpers-namespace',
       'pytest-order',
       'wheel',
+      'twine'
     ],
   },
   classifiers=[
