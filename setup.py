@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 def get_version():
   """Get version from __init__.py file."""
-  filename = os.path.join(os.path.dirname(__file__), 'src', 'gettool', 'metadata.py')
+  filename = os.path.join(os.path.dirname(__file__), 'src', 'thetool', 'metadata.py')
   with open(filename, encoding="UTF-8") as file:
     for line in file:
       if line.startswith('__version__'):
@@ -15,7 +15,7 @@ def get_version():
   raise ValueError(f"No __version__ defined in {filename}")
 
 setup(
-  name='gettool',
+  name='thetool',
   version=get_version(),
   description='Get and install tools from internet',
   long_description=open('README.md', encoding='UTF-8').read(), # pylint: disable=consider-using-with
@@ -23,14 +23,14 @@ setup(
   author_email='lunik@tiwabbit.fr',
   maintainer='Guillaume MARTINEZ',
   maintainer_email='lunik@tiwabbit.fr',
-  url='http://localhost/gettool',
-  download_url='http://localhost/gettool',
+  url='http://localhost/thetool',
+  download_url='http://localhost/thetool',
   license_files = ('LICENSE',),
   package_dir={'': 'src'},
   packages=find_packages(where='src'),
   entry_points={
     'console_scripts': [
-      'gettool = gettool:main',
+      'thetool = thetool:main',
     ],
   },
   python_requires=">=3.8.0",

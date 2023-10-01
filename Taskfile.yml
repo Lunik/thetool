@@ -3,7 +3,7 @@
 version: '3'
 
 vars:
-  NAME: gettool
+  NAME: thetool
   VENV_DIR: venv
   CHECKS_DIR: .checks
   PYTHON_BIN: "{{ .VENV_DIR }}/bin/python3"
@@ -225,7 +225,7 @@ tasks:
     cmds:
       - >
         {{ .PYTHON_BIN }}
-        src/gettool/__init__.py
+        src/thetool/__init__.py
         {{ .CLI_ARGS }}
 
   run:

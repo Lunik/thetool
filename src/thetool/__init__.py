@@ -1,26 +1,26 @@
 '''
-Main module for gettool.
+Main module for thetool.
 '''
 
 import sys
 
-from gettool.cli import parser
-from gettool.helpers.log import setup_logging, LOGGER
-from gettool.helpers.database import init_database
-from gettool.helpers.tool import init_tool_directory
+from thetool.cli import parser
+from thetool.helpers.log import setup_logging, LOGGER
+from thetool.helpers.database import init_database
+from thetool.helpers.tool import init_tool_directory
 
-from gettool.commands.version import run as version_run
-from gettool.commands.list import run as list_run
-from gettool.commands.info import run as info_run
-from gettool.commands.install import run as install_run
-from gettool.commands.uninstall import run as uninstall_run
-from gettool.commands.update import run as update_run
-from gettool.commands.upgrade import run as upgrade_run
-from gettool.commands.clean import run as clean_run
+from thetool.commands.version import run as version_run
+from thetool.commands.list import run as list_run
+from thetool.commands.info import run as info_run
+from thetool.commands.install import run as install_run
+from thetool.commands.uninstall import run as uninstall_run
+from thetool.commands.update import run as update_run
+from thetool.commands.upgrade import run as upgrade_run
+from thetool.commands.clean import run as clean_run
 
 def main():
   '''
-  Main function for gettool.
+  Main function for thetool.
   '''
 
   args = parser.parse_args()

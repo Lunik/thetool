@@ -2,8 +2,8 @@
 Command: version
 '''
 
-from gettool.metadata import METADATA
-from gettool.helpers.log import LOGGER
+from thetool.metadata import METADATA
+from thetool.helpers.log import LOGGER
 
 def init_parser(subparsers):
   '''

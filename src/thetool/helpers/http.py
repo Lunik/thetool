@@ -6,7 +6,7 @@ from datetime import timedelta
 
 from requests_cache import CachedSession, SQLiteCache
 
-from gettool.helpers.cache import get_cache_path
+from thetool.helpers.cache import get_cache_path
 
 def get_http_session():
   '''

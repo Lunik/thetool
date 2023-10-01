@@ -2,9 +2,9 @@
 Command: uninstall
 '''
 
-from gettool.helpers.log import LOGGER
-from gettool.helpers.database import get_database_tool
-from gettool.helpers.tool import remove_tool
+from thetool.helpers.log import LOGGER
+from thetool.helpers.database import get_database_tool
+from thetool.helpers.tool import remove_tool
 
 def init_parser(subparsers):
   '''

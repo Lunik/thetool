@@ -7,11 +7,11 @@ import shutil
 import zipfile
 
 from packaging.version import parse as VersionParser
-from gettool.helpers.http import get_http_session
+from thetool.helpers.http import get_http_session
 
-from gettool.metadata import METADATA
-from gettool.helpers.log import LOGGER
-from gettool.helpers.system import get_system_info
+from thetool.metadata import METADATA
+from thetool.helpers.log import LOGGER
+from thetool.helpers.system import get_system_info
 
 
 def get_tool_version(tool_metadata):

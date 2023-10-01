@@ -2,9 +2,9 @@
 Command: info
 '''
 
-from gettool.helpers.log import LOGGER
-from gettool.helpers.database import get_database_index, get_database_tool
-from gettool.helpers.tool import get_tool_version
+from thetool.helpers.log import LOGGER
+from thetool.helpers.database import get_database_index, get_database_tool
+from thetool.helpers.tool import get_tool_version
 
 def init_parser(subparsers):
   '''

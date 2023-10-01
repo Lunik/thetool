@@ -2,8 +2,8 @@
 Command: update
 '''
 
-from gettool.helpers.log import LOGGER
-from gettool.helpers.database import update_database
+from thetool.helpers.log import LOGGER
+from thetool.helpers.database import update_database
 
 def init_parser(subparsers):
   '''

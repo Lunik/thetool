@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.1
+
+### Changed
+
+- Rename the tool from `gettool` to `thetool`
+
 ## v0.1.0
 
 ### Added

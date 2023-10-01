@@ -5,8 +5,8 @@ Command: clean
 import os
 import shutil
 
-from gettool.helpers.log import LOGGER
-from gettool.helpers.cache import get_cache_path
+from thetool.helpers.log import LOGGER
+from thetool.helpers.cache import get_cache_path
 
 def init_parser(subparsers):
   '''

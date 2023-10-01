@@ -4,7 +4,7 @@ Cache helper functions
 
 import os
 
-from gettool.metadata import METADATA
+from thetool.metadata import METADATA
 
 def get_cache_path():
   '''

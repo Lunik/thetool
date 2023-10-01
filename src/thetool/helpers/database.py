@@ -6,9 +6,9 @@ import os
 from git import Repo
 import yaml
 
-from gettool.metadata import METADATA
-from gettool.helpers.cache import get_cache_path
-from gettool.helpers.log import LOGGER
+from thetool.metadata import METADATA
+from thetool.helpers.cache import get_cache_path
+from thetool.helpers.log import LOGGER
 
 # The database is a git project downloaded from GitHub
 # The database project is stored in the user's home cache directory

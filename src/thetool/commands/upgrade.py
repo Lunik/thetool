@@ -2,9 +2,9 @@
 Command: upgrade
 '''
 
-from gettool.helpers.log import LOGGER
-from gettool.helpers.database import get_database_tool
-from gettool.helpers.tool import download_tool, list_installed_tools
+from thetool.helpers.log import LOGGER
+from thetool.helpers.database import get_database_tool
+from thetool.helpers.tool import download_tool, list_installed_tools
 
 def init_parser(subparsers):
   '''
