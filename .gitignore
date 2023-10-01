@@ -1,0 +1,8 @@
+.checks
+build
+dist
+venv
+.task
+
+*.pyc
+*.egg-info
