@@ -39,6 +39,7 @@ setup(
     'requests-cache==1.*',
     'pyyaml==6.*',
     'GitPython==3.*',
+    'packaging==23.*',
   ],
   extras_require={
     'dev': [

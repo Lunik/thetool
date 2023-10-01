@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.2
+
+### Fixed
+
+- Add missing `packaging` dependency
+
 ## v0.1.1
 
 ### Changed
