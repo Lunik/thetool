@@ -3,6 +3,7 @@ build
 dist
 venv
 .task
+.coverage
 
 *.pyc
 *.egg-info
